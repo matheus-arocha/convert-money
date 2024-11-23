@@ -1,5 +1,6 @@
 const convertButton = document.querySelector(".convert-button")
 const currencySelect = document.querySelector(".currency-select")
+const currencyToSelect = document.querySelector(".currency-to-select")
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value
@@ -12,6 +13,7 @@ function convertValues() {
     const euroToday = 6.09
     const libraToday = 7.32
     const pesoToday = 0.28
+    const realToday = 1.0
 
 
     if (currencySelect.value == "dolar") {
@@ -42,6 +44,10 @@ function convertValues() {
             style: "currency",
             currency: "GBP"
         }).format(inputCurrencyValue / libraToday)
+    }
+
+    if (currencyToSelect.value == "real") {
+        
     }
 
 
